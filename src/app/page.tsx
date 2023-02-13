@@ -18,7 +18,16 @@ export default function Home() {
       >
         <img src="/rvn.png" width="100%" height="100%" />
       </div>
-      <p style={{ fontSize: 18, opacity: 0.8 }}>A not so creative studio.</p>
+      <p
+        style={{
+          fontWeight: 100,
+          fontSize: 18,
+          opacity: 0.8,
+          whiteSpace: "nowrap",
+        }}
+      >
+        A not so creative studio.
+      </p>
     </main>
   );
 }
