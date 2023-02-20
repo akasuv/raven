@@ -1,5 +1,6 @@
+import Button from "@/components/Button";
 const Hero = () => (
-  <div className="flex flex-col gap-y-7 items-center w-[660px] mx-auto pt-20 pb-10">
+  <div className="flex flex-col gap-y-7 items-center max-w-[660px] mx-auto md:pt-20 md:pb-10 p-[30px] ">
     <p className="text-[#767779] text-xs font-bold">
       Available for booking starting March 2023
     </p>
@@ -11,7 +12,7 @@ const Hero = () => (
       elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum
       dolor sit amet, consectetur adipiscing elit.
     </p>
-    <button>Lets Collaborate</button>
+    <Button>Lets Collaborate</Button>
   </div>
 );
 

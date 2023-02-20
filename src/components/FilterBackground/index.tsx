@@ -1,9 +1,7 @@
 const FilterBackground = () => (
-  <div
-    className="z-0 w-full h-full absolute backdrop-filter-[blur(2px)] 
-  bg-[rgba(0, 0, 0, 0.25)] blur-md
-  "
-  />
+  <div className="bg-[url('/noise.svg')] w-full h-full absolute left-0">
+    <div className="z-0 w-full h-full  bg-[#d9d9d914] backdrop-blur-3xl" />
+  </div>
 );
 
 export default FilterBackground;
