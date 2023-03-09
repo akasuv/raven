@@ -25,12 +25,19 @@ const ServiceCard = () => (
       {/*   <Tag text="Development Services" /> */}
       {/* </div> */}
     </div>
-    <div className="md:w-[500px] w-full h-[327px]  relative grow shrink-0">
+    <div className="md:w-[500px] w-full md:h-[327px] relative grow shrink-0">
       <Image
-        className="z-10 rounded-2xl"
-        src="/deliver.svg"
+        className="z-10 rounded-2xl hidden md:block"
+        src="/deliver.png"
         alt="Service Card"
         fill
+      />
+      <Image
+        className="z-10 rounded-2xl md:hidden"
+        src="/deliver-mobile.png"
+        alt="Service Card"
+        fill
+        objectFit="contain"
       />
     </div>
   </div>
