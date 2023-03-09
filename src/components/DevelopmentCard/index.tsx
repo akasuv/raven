@@ -17,10 +17,10 @@ const DevelopmentCard = () => (
   >
     <p className="text-white mb-2.5">Develop</p>
     <p className="text-[#989898]">
-      Passion is craved in us. By keeping up with the latest trends and advances
+      {`Passion is craved in us. By keeping up with the latest trends and advances
       within the field of technology, we're confident that we can bring the best
       solutions to you. We want to make sure you have access to the latest and
-      greatest technologies that help them stay ahead of the competition.
+      greatest technologies that help them stay ahead of the competition.`}
     </p>
     {/* <div className="flex gap-x-2.5 mt-4"> */}
     {/*   <Tag text="Design Services" /> */}

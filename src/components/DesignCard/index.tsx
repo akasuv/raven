@@ -17,8 +17,8 @@ const DesignCard = () => (
   >
     <p className="text-white mb-2.5">Design</p>
     <p className="text-[#989898]">
-      Creativity is flowing in our genes. We're not just designing for visual
-      appeal, but for expressing our aesthetic as digital-age artists.
+      {`Creativity is flowing in our genes. We're not just designing for visual
+      appeal, but for expressing our aesthetic as digital-age artists.`}
     </p>
     {/* <div className="flex gap-x-2.5 mt-4"> */}
     {/*   <Tag text="Design Services" /> */}
