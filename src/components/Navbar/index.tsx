@@ -7,7 +7,9 @@ const Navbar = () => (
       <p className="text-white font-bold">Raven Studio</p>
     </div>
     <ul className="text-[#989898]">
-      <li>Twitter</li>
+      <li>
+        <a href="https://twitter.com/ravenstudio_sh">Twitter</a>
+      </li>
     </ul>
   </nav>
 );
