@@ -3,6 +3,13 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { LangContext } from "@/context";
 import { Analytics } from "@vercel/analytics/react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Raven Studio",
+  description:
+    "Raven Studio is a creative software development studio based in Shanghai.",
+};
 
 export default function RootLayout({
   children,
