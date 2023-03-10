@@ -1,9 +1,23 @@
+import React from "react";
 import Image from "next/image";
+import { LangContext } from "@/context";
 import Tag from "@/components/Tag";
 
-const DesignCard = () => (
-  <div
-    className="relative w-full  p-[30px]   md:p-[35px] 
+const DesignCard = () => {
+  const lang = React.useContext(LangContext);
+
+  const title = {
+    en: "Design",
+    cn: "设计",
+  };
+  const description = {
+    en: `Creativity is flowing in our genes. We're not just designing for visual
+      appeal, but for expressing our aesthetic as digital-age artists.`,
+    cn: "创造力流动于我们的基因之中，我们不仅仅在为外观设计，同时也在表达作为数字时代艺术家的审美",
+  };
+  return (
+    <div
+      className="relative w-full  p-[30px]   md:p-[35px] 
     h-[340px]
     md:h-[390px]
     drop-shadow-[0_2px_9px_rgba(0,0,0,0.25)]
@@ -14,20 +28,18 @@ const DesignCard = () => (
     backdrop-blur-3xl
     relative
   "
-  >
-    <p className="text-white mb-2.5">Design</p>
-    <p className="text-[#989898]">
-      {`Creativity is flowing in our genes. We're not just designing for visual
-      appeal, but for expressing our aesthetic as digital-age artists.`}
-    </p>
-    {/* <div className="flex gap-x-2.5 mt-4"> */}
-    {/*   <Tag text="Design Services" /> */}
-    {/*   <Tag text="Development Services" /> */}
-    {/* </div> */}
-    <div className="flex justify-center absolute bottom-0">
-      <Image src="/design.svg" alt="Design" width={393} height={174} />
+    >
+      <p className="text-white mb-2.5">{title[lang]}</p>
+      <p className="text-[#989898]">{description[lang]}</p>
+      {/* <div className="flex gap-x-2.5 mt-4"> */}
+      {/*   <Tag text="Design Services" /> */}
+      {/*   <Tag text="Development Services" /> */}
+      {/* </div> */}
+      <div className="flex justify-center absolute bottom-0">
+        <Image src="/design.svg" alt="Design" width={393} height={174} />
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default DesignCard;
