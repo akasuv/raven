@@ -16,7 +16,7 @@ const DevelopmentCard = () => {
       within the field of technology, we're confident that we can bring the best
       solutions to you. We want to make sure you have access to the latest and
       greatest technologies that help them stay ahead of the competition.`,
-    cn: `我们从不会错过最新技术，但我们不仅仅是新玩具的玩家，通过跟上技术领域的最新趋势和进步，我们相信我们可以为您提供最好的解决方案, 确保您能够获得最前沿、最优秀的技术，从而保持竞争优势。`,
+    cn: `我们从不会错过最新技术，但我们不仅仅是新玩具的玩家，通过跟上技术领域的最新趋势和进步，我们相信可以为您提供最好的解决方案, 确保您能够获得最前沿、最优秀的技术，从而保持竞争优势。`,
   };
   return (
     <div
