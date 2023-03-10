@@ -2,6 +2,7 @@
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { LangContext } from "@/context";
+import { Analytics } from "@vercel/analytics/react";
 
 export default function RootLayout({
   children,
@@ -28,6 +29,7 @@ export default function RootLayout({
           <Navbar />
           {children}
         </LangContext.Provider>
+        <Analytics />
       </body>
     </html>
   );
