@@ -19,7 +19,7 @@ const ServiceCard = () => {
   };
   return (
     <div
-      className="relative max-w-full h-[583px] md:h-[376px] p-[35px]  flex flex-col md:flex-row justify-between items-center gap-x-24 
+      className="relative max-w-full h-[583px] md:h-[376px] p-[30px] md:p-[10px]  flex flex-col md:flex-row justify-between items-center gap-x-24 
     drop-shadow-[0_2px_9px_rgba(0,0,0,0.25)]
     border-[0.8px] border-[rgba(152,152,152,0.3)]
     rounded-3xl
@@ -38,7 +38,7 @@ const ServiceCard = () => {
         {/*   <Tag text="Development Services" /> */}
         {/* </div> */}
       </div>
-      <div className="lg:w-[500px] w-[300px] h-[200px] max-w-full lg:h-[327px] relative grow shrink-0">
+      <div className="lg:w-[569px] w-[346px] h-[327px] max-w-full lg:h-[356px] relative grow shrink-0">
         <Image
           className="z-10 rounded-2xl hidden lg:block"
           src="/deliver.png"
