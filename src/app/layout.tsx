@@ -1,5 +1,7 @@
+"use client";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import { LangContext } from "@/context";
 
 export default function RootLayout({
   children,
@@ -14,8 +16,10 @@ export default function RootLayout({
       */}
       <head />
       <body>
-        <Navbar />
-        {children}
+        <LangContext.Provider value={location.pathname === "/cn" ? "cn" : "en"}>
+          <Navbar />
+          {children}
+        </LangContext.Provider>
       </body>
     </html>
   );

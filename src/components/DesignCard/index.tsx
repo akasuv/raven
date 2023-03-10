@@ -17,9 +17,9 @@ const DesignCard = () => {
   };
   return (
     <div
-      className="relative w-full  p-[30px]   md:p-[35px] 
-    h-[340px]
-    md:h-[390px]
+      className="relative w-full  p-[30px]   md:p-[35px] pb-0 md:pb-0
+    md:h-[340px]
+    gap-y-[30px]
     drop-shadow-[0_2px_9px_rgba(0,0,0,0.25)]
     border-[0.8px] border-[rgba(152,152,152,0.3)]
     rounded-3xl
@@ -27,15 +27,20 @@ const DesignCard = () => {
     bg-[rgba(217,217,217,0.08)]
     backdrop-blur-3xl
     relative
+    flex
+    flex-col
+    justify-between
   "
     >
-      <p className="text-white mb-2.5">{title[lang]}</p>
-      <p className="text-[#989898]">{description[lang]}</p>
+      <div>
+        <p className="text-white mb-2.5">{title[lang]}</p>
+        <p className="text-[#989898]">{description[lang]}</p>
+      </div>
       {/* <div className="flex gap-x-2.5 mt-4"> */}
       {/*   <Tag text="Design Services" /> */}
       {/*   <Tag text="Development Services" /> */}
       {/* </div> */}
-      <div className="flex justify-center absolute bottom-0">
+      <div className="flex justify-center">
         <Image src="/design.svg" alt="Design" width={393} height={174} />
       </div>
     </div>

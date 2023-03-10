@@ -26,6 +26,7 @@ const ServiceCard = () => {
     overflow-hidden
     bg-[rgba(217,217,217,0.08)]
     backdrop-blur-3xl
+    gap-y-[30px]
     md:gap-y-[45px]
   "
     >
@@ -37,15 +38,15 @@ const ServiceCard = () => {
         {/*   <Tag text="Development Services" /> */}
         {/* </div> */}
       </div>
-      <div className="md:w-[500px] w-full md:h-[327px] relative grow shrink-0">
+      <div className="lg:w-[500px] w-[300px] h-[200px] max-w-full lg:h-[327px] relative grow shrink-0">
         <Image
-          className="z-10 rounded-2xl hidden md:block"
+          className="z-10 rounded-2xl hidden lg:block"
           src="/deliver.png"
           alt="Service Card"
           fill
         />
         <Image
-          className="z-10 rounded-2xl md:hidden"
+          className="z-10 rounded-2xl lg:hidden"
           src="/deliver-mobile.png"
           alt="Service Card"
           fill
