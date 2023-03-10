@@ -6,7 +6,7 @@ const Contact = () => {
   const lang = React.useContext(LangContext);
   const title = {
     en: "Work with us and see your ideas soar to new heights.",
-    cn: "一起合作，见证新的高度",
+    cn: "一起合作，\n见证新的高度",
   };
 
   const contactText = {
@@ -16,7 +16,7 @@ const Contact = () => {
 
   return (
     <div className="pt-[100px] md:pt-[140px] flex flex-col items-center gap-y-[35px] pb-[146px] px-[56px]">
-      <p className="text-[rgba(250,250,250,0.95)] text-[28px] text-center w-[480px] max-w-full">
+      <p className="text-[rgba(250,250,250,0.95)] text-[28px] text-center w-[480px] max-w-full whitespace-pre-line md:whitespace-normal">
         {title[lang]}
       </p>
       <Button>

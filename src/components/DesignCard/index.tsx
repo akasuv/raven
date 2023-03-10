@@ -18,7 +18,7 @@ const DesignCard = () => {
   return (
     <div
       className="relative w-full  p-[30px]   md:p-[35px] pb-0 md:pb-0
-    md:h-[340px]
+      h-full
     gap-y-[30px]
     drop-shadow-[0_2px_9px_rgba(0,0,0,0.25)]
     border-[0.8px] border-[rgba(152,152,152,0.3)]

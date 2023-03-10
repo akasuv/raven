@@ -12,7 +12,7 @@ const Navbar = () => {
       href: "/cn",
     },
     cn: {
-      text: "EN",
+      text: "English",
       href: "/",
     },
   };

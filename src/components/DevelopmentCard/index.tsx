@@ -31,7 +31,6 @@ const DevelopmentCard = () => {
     flex
     flex-col
     justify-between
-    h-[340px]
     gap-y-[30px]
   "
     >
