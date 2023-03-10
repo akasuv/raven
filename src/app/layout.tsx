@@ -16,7 +16,15 @@ export default function RootLayout({
       */}
       <head />
       <body>
-        <LangContext.Provider value={location.pathname === "/cn" ? "cn" : "en"}>
+        <LangContext.Provider
+          value={
+            typeof window !== "undefined"
+              ? window.location?.pathname === "/cn"
+                ? "cn"
+                : "en"
+              : "en"
+          }
+        >
           <Navbar />
           {children}
         </LangContext.Provider>
