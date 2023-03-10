@@ -27,7 +27,7 @@ const ServiceCard = () => {
     bg-[rgba(217,217,217,0.08)]
     backdrop-blur-3xl
     gap-y-[30px]
-    md:gap-y-[45px]
+    md:gap-y-0
   "
     >
       <div className="z-10 md:pl-[55px]">
